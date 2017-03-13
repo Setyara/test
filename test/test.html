@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+        <script src="test.js"></script>
+        <link rel="stylesheet" type="text/css" href="test.css">
+    </head>
+    <body>
+        <div>
+            <table cellspacing="0" cellpadding="10" rules="rows"
+                       border="1" width="80%">
+                <tr>
+                    <th><a href ng-click="contentSwitch = 'content1'">Article 1</a></th>
+                    <th><a href ng-click="contentSwitch = 'content2'">Article 2</a></th>
+                    <th><a href ng-click="contentSwitch = 'content3'">Article 3</a></th>
+                    <th><a href ng-click="contentSwitch = 'content4'">Article 4</a></th>
+                    <th><a href ng-click="contentSwitch = 'content5'">Article 5</a></th>
+                </tr>
+            </table>
+        </div>
+        <div ng-controller="TestCtrl">
+            <input class="but1" type="checkbox" ng-model="data.visible">Открыть/скрыть
+                <p ng-if="data.visible">Product description</p>
+                <p ng-if="!data.visible">Product</p>
+        </div>
+        <hr>
+        <div>
+            <article ng-if="contentSwitch == 'content1'">
+                <table cellspacing="0" cellpadding="10" rules="rows"
+                       border="1" width="80%">
+                    <tr><td>Stool<button class="but1">
+                        <details>
+                            <summary>In detail</summary>
+                            <p>Very shaky and comfortable chair</p>
+                        </details></button></td></tr>
+                    <tr><td>Desk<button class="but1">
+                        <details>
+                            <summary>In detail</summary>
+                            <p>The table of dreams, the envy of all tortures</p>
+                        </details></button></td></tr>
+                    <tr><td>Name 3<button class="but1"><details>
+                            <summary>In detail</summary>
+                            <p>
+                                <div class="row">
+                    <div class="col-md-3">
+                        <a href><img class="fot" src="1"></a>
+                    </div>
+                            </p>
+                        </details></button></td></tr>
+                    <tr><td>Name 4<div ng-controller="TestCtrl">
+                        <input class="but1" type="checkbox" ng-model="data.visible">Detals
+                        <p ng-if="data.visible">Product description</p>
+                        <p ng-if="!data.visible">Product</p>
+                    </div></td></tr>
+                    <tr><td>Name 5<div ng-controller="TestCtrl">
+                        <input class="but1" type="checkbox" ng-model="data.visible">Detals
+                        <h1><p ng-if="data.visible">Very roomy and beautiful wardrobe</p></h1>
+                        <p ng-if="!data.visible">Cupboard</p>
+                    </div></td></tr>
+                </table>
+            </article>
+            <article ng-if="contentSwitch == 'content2'">
+                <table cellspacing="0" cellpadding="10" rules="rows"
+                       border="1" width="80%">
+                    <tr><td>Name 12<button>
+                        <details>
+                            <summary>In detail</summary>
+                            <p>Detal</p>
+                        </details></button></td></tr>
+                    <tr><td>Name 2<button>
+                        <details>
+                            <summary>In detail</summary>
+                            <p>Detal</p>
+                        </details></button></td></tr>
+                    <tr><td>Name 3<button><details>
+                            <summary>In detail</summary>
+                            <p>Detal</p>
+                        </details></button></td></tr>
+                    <tr><td>Name 4<button><details>
+                            <summary>In detail</summary>
+                            <p>Detal</p>
+                        </details></button></td></tr>
+                    <tr><td>Name 5<button><details>
+                            <summary>In detail</summary>
+                            <p>Detal</p>
+                        </details></button></td></tr>
+                </table>
+            </article>
+        </div>
+    </body>
+</html>
