@@ -6,10 +6,24 @@
     width: 40%;
 }
 
+ /**
+ *Задний фон
+ */
+.back {
+	background: url(img/back.jpg) no-repeat;
+	background-size: 100%;
+}
+
+ /**
+ *Параметры кнопки продукта
+ */
 .but1 {
 	margin: 25px 10px 25px 855px;
 }
 
+ /**
+ *Параметры фотографии
+ */
 .fot {
  border: 3px solid brown; 
  margin: 20px;

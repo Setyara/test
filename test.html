@@ -7,26 +7,23 @@
         <script src="test.js"></script>
         <link rel="stylesheet" type="text/css" href="test.css">
     </head>
-    <body>
+    <body class="back">
+    <!--Верхнее меню с выбором отображения страницы-->
         <div>
             <table cellspacing="0" cellpadding="10" rules="rows"
-                       border="1" width="80%">
+                       border="1" width="100%">
                 <tr>
-                    <th><a href ng-click="contentSwitch = 'content1'">Article 1</a></th>
-                    <th><a href ng-click="contentSwitch = 'content2'">Article 2</a></th>
-                    <th><a href ng-click="contentSwitch = 'content3'">Article 3</a></th>
-                    <th><a href ng-click="contentSwitch = 'content4'">Article 4</a></th>
-                    <th><a href ng-click="contentSwitch = 'content5'">Article 5</a></th>
+                    <th><button><a href ng-click="contentSwitch = 'content1'">Article 1</a></button></th>
+                    <th><button><a href ng-click="contentSwitch = 'content2'">Article 2</a></button></th>
+                    <th><button><a href ng-click="contentSwitch = 'content3'">Article 3</a></button></th>
+                    <th><button><a href ng-click="contentSwitch = 'content4'">Article 4</a></button></th>
+                    <th><button><a href ng-click="contentSwitch = 'content5'">Article 5</a></button></th>
                 </tr>
             </table>
         </div>
-        <div ng-controller="TestCtrl">
-            <input class="but1" type="checkbox" ng-model="data.visible">Открыть/скрыть
-                <p ng-if="data.visible">Product description</p>
-                <p ng-if="!data.visible">Product</p>
-        </div>
         <hr>
         <div>
+        <!--Первая страница с перечнем товара-->
             <article ng-if="contentSwitch == 'content1'">
                 <table cellspacing="0" cellpadding="10" rules="rows"
                        border="1" width="80%">
@@ -61,6 +58,7 @@
                     </div></td></tr>
                 </table>
             </article>
+            <!--Вторая страница с перечнем товара-->
             <article ng-if="contentSwitch == 'content2'">
                 <table cellspacing="0" cellpadding="10" rules="rows"
                        border="1" width="80%">
