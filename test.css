@@ -14,21 +14,30 @@
 	background-size: 100%;
 }
 
+ /**
+ *
+ */
 .name1 {
-    float: left; /* Обтекание по правому краю */
-    border: 1px solid black; /* Параметры рамки */
-    padding: 5px; /* Поля вокруг текста */
-    margin: 5px 10px 5px 10px; /* Отступ справа */
-    width: 5%; /* Ширина блока */
+    float: left;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px 10px 5px 10px;
+    width: 5%;
 }
 
+ /**
+ *Параметры таблицы
+ */
 .tabl {
-	width: 100%; /* Ширина таблицы */
+	width: 100%;
 }
 
+ /**
+ *Параметры поля таблицы
+ */
 .pol {
-	padding: 5px; /* Поля в ячейках */
-    vertical-align: center; /* Выравнивание по верхнему краю ячеек */
+	padding: 5px;
+    vertical-align: center;
 }
  /**
  *Параметры кнопки продукта
@@ -41,6 +50,6 @@
  *Параметры фотографии
  */
 .fot {
- border: 3px solid brown; 
+ border: 3px solid brown;
  margin: 10px;
  }
