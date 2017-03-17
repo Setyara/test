@@ -51,6 +51,59 @@
  *Параметры фотографии
  */
 .fot {
- border: 3px solid brown;
- margin: 10px;
+ 	border: 3px solid brown;
+ 	margin: 10px;
  }
+
+
+.image {
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	background: whiteSmoke;
+	width: 200px;
+	border: 15px solid whiteSmoke;
+	margin: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	position: relative;
+	vertical-align: middle;
+}
+
+.image:hover {
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	-ms-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+	width: 300px;
+	margin: -40px;
+	box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+	z-index: 200;
+}
+
+
+.block-img {
+	display: table;
+	margin: 0 auto;
+	padding: 30px;
+}
+.block {
+	display: table-cell;
+	float: left;
+	height: auto;
+	min-height: 180px;
+	width: 250px;
+}
+.block-vert {
+	height: 160px;
+	width: 250px;
+}
+.block img.image  {
+	margin: 0;
+}
+.block-vert img.image  {
+	margin: 0;
+}
+

@@ -8,34 +8,46 @@
         <link rel="stylesheet" type="text/css" href="test.css">
     </head>
     <body class="back">
-    <!--Верхнее меню с выбором отображения страницы-->
+<!--Верхнее меню с выбором отображения страницы-->
         <div>
             <table cellspacing="0" cellpadding="10" rules="rows"
                        border="1" width="100%">
                 <tr>
-                    <th><button><a href ng-click="contentSwitch = 'content1'">Article 1</a></button></th>
-                    <th><button><a href ng-click="contentSwitch = 'content2'">Article 2</a></button></th>
-                    <th><button><a href ng-click="contentSwitch = 'content3'">Article 3</a></button></th>
-                    <th><button><a href ng-click="contentSwitch = 'content4'">Article 4</a></button></th>
+                    <th><button><a href ng-click="contentSwitch = 'content1'">Hand tool</a></button></th>
+                    <th><button><a href ng-click="contentSwitch = 'content2'">The electrotool</a></button></th>
+                    <th><button><a href ng-click="contentSwitch = 'content3'">Fixing</a></button></th>
+                    <th><button><a href ng-click="contentSwitch = 'content4'">Measuring tools</a></button></th>
                     <th><button><a href ng-click="contentSwitch = 'content5'">Article 5</a></button></th>
+                    <th><button><a href ng-click="contentSwitch = 'content6'">Article 6</a></button></th>
                 </tr>
             </table>
         </div>
         <hr>
+        <div class="block-img">
+            <img src="img/1-1.jpg" ng-click="contentSwitch = 'content1'" class="image" alt="" title="Hand tool"/>
+            <img src="img/2-1.jpg" ng-click="contentSwitch = 'content2'" class="image" alt="" title="The eslectrotool"/> 
+            <img src="img/3-1.jpg" ng-click="contentSwitch = 'content3'" class="image" alt="" title="Fixing"/>
+        </div>
+        <div class="block-img">
+            <img src="img/4-1.jpg" ng-click="contentSwitch = 'content4'" class="image" alt="" title="Measuring tools"/>
+            <img src="img/2-2.jpg" class="image" alt="" title="Картинка 2"/> 
+            <img src="img/2-3.jpg" class="image" alt="" title="Картинка 3"/>
+        </div>
+        <hr>
         <div>
-        <!--Первая страница с перечнем товара-->
+<!--Первая страница с перечнем товара-->
             <article ng-if="contentSwitch == 'content1'">
                 <table class="tabl" cellspacing="0" cellpadding="10" rules="rows"
                        border="1" width="100%">
                     <tr>
                         <td class="pol"><h1>Screwdriver</h1></td>
                         <td class="pol">Diamond coated tips reduce slippage and aids in removing stripped screws. Easy to read laser marked shanks allow you to easily find which size you need.  Dual material, ergonomic handles provide comfortable grip and torque for users.</td>
-                        <td class="pol"> <a href><img class="fot" src="img/1-1.jpeg"></a></td>
+                        <td class="pol"> <a href><img class="fot" src="img/1-1.jpg"></a></td>
                     </tr>
                     <tr>
                         <td class="pol"><h1>A hammer</h1></td>
                         <td class="pol">The patented head and reinforced claws decrease shock and make prying an easier task. You'll enjoy the extra leverage provided by the side nail puller, as well as the flexibility of the nail starter, which holds standard and duplex nails. This hammer is a solid choice for construction professionals.</td>
-                        <td class="pol"> <a href><img class="fot" src="img/1-2.jpeg"></a></td>
+                        <td class="pol"> <a href><img class="fot" src="img/1-2.jpg"></a></td>
                     </tr>
                     <tr>
                         <td class="pol"><h1>Saw</h1></td>
@@ -54,7 +66,7 @@
                     </tr>
                 </table>
             </article>
-            <!--Вторая страница с перечнем товара-->
+<!--Вторая страница с перечнем товара-->
             <article ng-if="contentSwitch == 'content2'">
                 <table cellspacing="0" cellpadding="10" rules="rows"
                        border="1" width="100%">
@@ -86,6 +98,68 @@
                         <td class="pol"><h1>Angle grinder</h1></td>
                         <td class="pol">Angle Grinder can help you grind, cut and buff all with one versatile tool. Reaching your job is half the battle. The 10' cord provides plenty of range and flexibility to get to work anywhere. With the ability to control the speed of the disc, you can customize your grinding power to each material type in your project. Grinding requires a steady hand and a solid grip, so this machine delivers both with the auxiliary handle.</td>
                         <td class="pol"> <a href><img class="fot" src="img/2-5.jpg"></a></td>
+                    </tr>
+                </table>
+            </article>
+<!--Третья страница с перечнем товара-->
+            <article ng-if="contentSwitch == 'content3'">
+                <table cellspacing="0" cellpadding="10" rules="rows"
+                       border="1" width="100%">
+                    <tr>
+                        <td class="pol"><h1>Nails</h1></td>
+                        <td class="pol">Bright Round Wire Nails are by far and away the most popular nail in the UK. It is a general purpose nail and is suitable for a variety of applications. It is most often used to secure roof and floor joists, partitions and heavy duty fencing.</td>
+                        <td class="pol"> <a href><img class="fot" src="img/3-1.jpg"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="pol"><h1>Bolt</h1></td>
+                        <td class="pol">A Bolt is a fastener tool that is used to secure objects together. Usually used with nuts and other Bearings for insertion through holes, there are various kinds of bolts such as hex head, hook bolts, elevator bolts, lag bolts, U bolts, eye bolts, holding down bolts, carriage bolts, and many more.</td>
+                        <td class="pol"> <a href><img class="fot" src="img/3-2.jpg"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="pol"><h1>Screw Nut</h1></td>
+                        <td class="pol">Determine the maximum torque according to bolt (nut) size and grade. Always consult the manufacturers instructions or engineering recommendations when making bolted connections.</td>
+                        <td class="pol"> <a href><img class="fot" src="img/3-3.jpg"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="pol"><h1>Rivets</h1></td>
+                        <td class="pol">Diameter 6mm. Length 18mm. Grip range 9.5mm - 13mm. 250 rivets per pack. Quick application and economic cost. Will fit most air, hand and electric riveters. Aluminium with steel pulling mandrel.</td>
+                        <td class="pol"> <a href><img class="fot" src="img/3-4.jpg"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="pol"><h1>Screws</h1></td>
+                        <td class="pol">Used a shorter version to fix 9 mm plywood to existing 4 drawer cabinets and then used these to go through bottom of new cab's, through ply and into existing cabinets. In my circumstances I pre-drilled a 2 mm hole in the 2 drawer cab's just to stop the screws from 'walking' (a centre punch would have worked just as well).</td>
+                        <td class="pol"> <a href><img class="fot" src="img/3-5.jpg"></a></td>
+                    </tr>
+                </table>
+            </article>
+<!--Четвёртая страница с перечнем товара-->
+            <article ng-if="contentSwitch == 'content4'">
+                <table cellspacing="0" cellpadding="10" rules="rows"
+                       border="1" width="100%">
+                    <tr>
+                        <td class="pol"><h1>Tape measure</h1></td>
+                        <td class="pol">Three-rivet reinforced tip. Fingertip pause control. Non-slip jacketed grip. Built-in belt clip. Designed for the professional and serious do-it-yourselfer.</td>
+                        <td class="pol"> <a href><img class="fot" src="img/4-1.jpg"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="pol"><h1>Level</h1></td>
+                        <td class="pol">I-shaped frame. Polishing finish. V-shaped ditch on measuring surface. Cast iron made. Melamine coated surface.</td>
+                        <td class="pol"> <a href><img class="fot" src="img/4-2.jpg"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="pol"><h1>Plumb bob</h1></td>
+                        <td class="pol">Weight of plumb bob 113g. 18 metre of strong nylon line. 115mm body with accurately machined point, knurled locking screw and corrosion resistant finish. Use to establish vertical datum for bricklaying, scaffolding and surveying.</td>
+                        <td class="pol"> <a href><img class="fot" src="img/4-3.jpg"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="pol"><h1>Try square</h1></td>
+                        <td class="pol">Used for marking out right angles and testing squareness. Rosewood stock with brass face for greater wear resistance. Blades are manufactured from hardened steel, and secured by steel washers with brass rivets. Solid rosewood stock with solid brass facing securely fixed to the stock provides a hard wearing contact edge.</td>
+                        <td class="pol"> <a href><img class="fot" src="img/4-4.jpg"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="pol"><h1>Ruler</h1></td>
+                        <td class="pol">SP Tools branded stainless steel ruler. SP Tools rulers are available in a variety of sizes. 1m length version.</td>
+                        <td class="pol"> <a href><img class="fot" src="img/4-5.jpg"></a></td>
                     </tr>
                 </table>
             </article>
